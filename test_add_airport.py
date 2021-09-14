@@ -10,30 +10,46 @@ class TestAddAirport(unittest.TestCase):
         self.wd.implicitly_wait(30)
 
     def test_add_airport(self):
+        # Открытие страницы
         wd = self.wd
         wd.get("http://192.168.178.197/")
         wd.maximize_window()
+
+        # Ввод логина
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").click()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").clear()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").send_keys("test")
+
+        # Ввод пароля
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").click()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").clear()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").send_keys("1245")
+
+        # Клик по кнопке "Войти"
         wd.find_element_by_xpath("//form[@id='login-card']/div[3]/button/span[2]/span/span").click()
+
+        # Открытие модуля "Справочники/Аэропорты"
         wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/button/span[2]/span/i").click()
         wd.find_element_by_xpath("//div[@id='q-app']/div/div/aside/div/div[2]/div[3]/div[3]/span").click()
         wd.find_element_by_xpath("//div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]").click()
+
+        # Открытие формы "Добавить Аэропорт"
         wd.find_element_by_xpath("//div[@id='q-app']/div/div[2]/div/div[2]/div[2]/div/button/span[2]/span").click()
+
+        # Ввот кода ИАТА
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").click()
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").clear()
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").send_keys("LED")
 
+        # Добавление аэропорта (кнопка "Добавить")
         wd.find_element_by_xpath(u"(.//*[normalize-space(text()) and normalize-space(.)='Код ИАТА'])[1]/following::span[4]").click()
         wd.find_element_by_css_selector("svg.q-checkbox__svg.fit.absolute-full").click()
         wd.find_element_by_xpath(u"(.//*[normalize-space(text()) and normalize-space(.)='Назад'])[1]/following::span[4]").click()
 
-        wd.implicitly_wait(30)
-        wd.quit()
+        #wd.implicitly_wait(30)
+
+        #wd.quit()
+        #wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/div/div/div/i").click()
         #wd.find_element_by_xpath("//div[4]/button/span[2]/span/i").click()
         #wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/button/span[2]/span/i").click()
         #wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/button/span[2]/span/i").click()
