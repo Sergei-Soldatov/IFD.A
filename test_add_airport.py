@@ -14,23 +14,17 @@ class TestAddAirport(unittest.TestCase):
     def test_add_airport(self):
         wd = self.wd
         self.open_home_page(wd)
-
-        self.enter_login(wd)
-        self.enter_password(wd)
+        self.enter_login(wd, username="test")
+        self.enter_password(wd, password="1245")
         self.confurm_login_and_password(wd)
-
         self.open_sandwich_menu(wd)
         self.airport_module_selection(wd)
         self.open_tab_airport(wd)
-
         self.open_form_add_airport(wd)
-
-        self.enter_IATA_code(wd)
-
+        self.enter_IATA_code(wd, iata_cod="LED")
         self.search_airport_by_parameter(wd)
         self.activat_checkbox_for_airport(wd)
         self.adding_found_airport(wd)
-
         self.logout(wd)
 
     def logout(self, wd):
@@ -60,10 +54,10 @@ class TestAddAirport(unittest.TestCase):
         wd.find_element_by_xpath(
             u"(.//*[normalize-space(text()) and normalize-space(.)='Код ИАТА'])[1]/following::span[4]").click()
 
-    def enter_IATA_code(self, wd):
+    def enter_IATA_code(self, wd, iata_cod):
         # Ввод кода ИАТА в поле "Код ИАТА" в форме "Добавить аэропорт"
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").click()
-        wd.find_element_by_xpath("//div[4]/label/div/div/div/input").send_keys("LED")
+        wd.find_element_by_xpath("//div[4]/label/div/div/div/input").send_keys(iata_cod)
 
     def open_form_add_airport(self, wd):
         # Открытие формы "Добавить Аэропорт" (кнопка "+Добавить")
@@ -85,17 +79,17 @@ class TestAddAirport(unittest.TestCase):
         # Валидация логина и пароля (кнопка "Войти")
         wd.find_element_by_xpath("//form[@id='login-card']/div[3]/button/span[2]/span/span").click()
 
-    def enter_password(self, wd):
+    def enter_password(self, wd, password):
         # Ввод пароля
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").click()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").clear()
-        wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").send_keys("1245")
+        wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label[2]/div/div/div/input").send_keys(password)
 
-    def enter_login(self, wd):
+    def enter_login(self, wd, username):
         # Ввод логина
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").click()
         wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").clear()
-        wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").send_keys("test")
+        wd.find_element_by_xpath("//form[@id='login-card']/div[2]/label/div/div/div/input").send_keys(username)
 
     def open_home_page(self, wd):
         # Открытие домашней страницы и максимальное разворачивание окна
