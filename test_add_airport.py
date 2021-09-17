@@ -21,11 +21,76 @@ class TestAddAirport(unittest.TestCase):
         self.airport_module_selection(wd)
         self.open_tab_airport(wd)
         self.open_form_add_airport(wd)
-        self.enter_IATA_code(wd, iata_cod="LED")
+        # self.enter_IATA_code(wd, iata_cod="LED")
+        # self.search_airport_by_parameter(wd)
+        # self.activat_checkbox_for_airport(wd)
+        # self.adding_found_airport(wd)
+        # self.logout(wd)
+
+
+
+        self.selection_country_for_form_adding_airport(wd)
+#        self.select_country_from_displayed_list(wd)
+        self.selection_town_for_form_adding_airport(wd)
+#        self.select_town_from_displayed_list(wd)
+
+        # Клик по кнопке "Поиск" в форме "Добавить аэропорт" (взять уже готовый вспомогательный метод)
         self.search_airport_by_parameter(wd)
-        self.activat_checkbox_for_airport(wd)
-        self.adding_found_airport(wd)
+
+        self.activat_first_checkbox_to_select_airport(wd)
+        self.сlicking_the_сlear_button(wd)
+        self.exit_from_the_add_airport_form(wd)
         self.logout(wd)
+
+
+
+
+
+    def exit_from_the_add_airport_form(self, wd):
+        # Закрытие формы "Добавить аэропорт". Кнопка "Х"
+        wd.find_element_by_xpath(
+            u"(.//*[normalize-space(text()) and normalize-space(.)='очистить'])[1]/following::span[1]").click()
+
+    def сlicking_the_сlear_button(self, wd):
+        # Очистка заполненной формы "Добавить аэропорт" (кнопка "Очистить"). Переход в нерасширенную форму
+        wd.find_element_by_xpath(
+            u"(.//*[normalize-space(text()) and normalize-space(.)='Добавить аэропорт'])[1]/following::span[3]").click()
+
+    def activat_first_checkbox_to_select_airport(self, wd):
+        # Выбор первого аэропорта из отобразившегося списка чекбоксов аэропортов
+        wd.find_element_by_xpath(
+            u"(.//*[normalize-space(text()) and normalize-space(.)='Выберите аэропорт'])[1]/following::*[name()='svg'][1]").click()
+
+    # def select_town_from_displayed_list(self, wd):
+    #     # Из отобразившегося выбрать значение "Санкт-Петербург"
+    #     wd.find_element_by_xpath("//div[@id='qvs_22']/div/div[2]/div").click()
+
+    def selection_town_for_form_adding_airport(self, wd):
+        # Клик по полю "Город" и ввод значения "Санкт"
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").click()
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").click()
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").clear()
+        # wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").send_keys(u"Санкт-петербург")
+        wd.find_element_by_xpath("//div[@id='qvs_36']/div[14]/div[2]/div").click()
+        wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='санкт-петербург']/parent::*").click()
+        # wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").send_keys('\ue007')
+        # wd.find_element_by_id("login-card").submit()
+        # wd.send_
+
+    # def select_country_from_displayed_list(self, wd):
+    #     # Из отобразившегося списка выбрать значение "Российская Федерация"
+    #     wd.find_element_by_xpath("//div[@id='qvs_21']/div/div[2]/div").click()
+
+    def selection_country_for_form_adding_airport(self, wd):
+        # Клик по полю "Страна" и ввод значения "Рос"
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").click()
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").clear()
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").send_keys(u"Российская федерация")
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").send_keys('\ue007')
+        # wd.find_element_by_id("login-card").submit()
+
+
+
 
     def logout(self, wd):
         # Выполнение logout (первый способ). В методе def setUp(self): "играем" со временем
