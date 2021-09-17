@@ -9,7 +9,7 @@ class TestAddAirport(unittest.TestCase):
     def setUp(self):
 #        self.wd = webdriver.Chrome()
         self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(5)
+        self.wd.implicitly_wait(12)
 
     def test_add_airport(self):
         wd = self.wd
@@ -29,22 +29,32 @@ class TestAddAirport(unittest.TestCase):
 
 
 
-        self.selection_country_for_form_adding_airport(wd)
+        # self.selection_country_for_form_adding_airport(wd)
 #        self.select_country_from_displayed_list(wd)
-        self.selection_town_for_form_adding_airport(wd)
+        # self.selection_town_for_form_adding_airport(wd)
 #        self.select_town_from_displayed_list(wd)
 
         # Клик по кнопке "Поиск" в форме "Добавить аэропорт" (взять уже готовый вспомогательный метод)
-        self.search_airport_by_parameter(wd)
+        # self.search_airport_by_parameter(wd)
 
-        self.activat_first_checkbox_to_select_airport(wd)
-        self.сlicking_the_сlear_button(wd)
+        # self.activat_first_checkbox_to_select_airport(wd)
+        # self.сlicking_the_сlear_button(wd)
+        # self.waiting_before_closing_form(wd)
         self.exit_from_the_add_airport_form(wd)
+
         self.logout(wd)
 
 
+    def waiting_before_closing_form(self, wd):
+        # Ожидание перед закрытием формы "Добавить аэропорт"
+        WebDriverWait(wd, 7).until(EC.invisibility_of_element((By.XPATH, "//div[@class='q-dialog__backdrop fixed-full']")))
+        WebDriverWait(wd, 7).until(EC.element_to_be_clickable((By.XPATH, "//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']"))).click()
 
 
+    # def waiting_before_closing_form(self, wd):
+    #     # Ожидание перед закрытием формы "Добавить аэропорт"
+    #     WebDriverWait(wd, 7).until(EC.invisibility_of_element((By.XPATH, "//span[@class='q-ripple']")))
+    #     WebDriverWait(wd, 7).until(EC.element_to_be_clickable((By.XPATH, "//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']"))).click()
 
     def exit_from_the_add_airport_form(self, wd):
         # Закрытие формы "Добавить аэропорт". Кнопка "Х"
@@ -70,9 +80,9 @@ class TestAddAirport(unittest.TestCase):
         wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div/label/div/div/div/div/input").click()
         wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").click()
         wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").clear()
-        # wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").send_keys(u"Санкт-петербург")
-        wd.find_element_by_xpath("//div[@id='qvs_36']/div[14]/div[2]/div").click()
-        wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='санкт-петербург']/parent::*").click()
+        wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").send_keys(u"Санкт-петербург")
+        # wd.find_element_by_xpath("//div[@id='qvs_36']/div[14]/div[2]/div").click()
+        # wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='санкт-петербург']/parent::*").click()
         # wd.find_element_by_xpath("//div[3]/div[2]/div/div[2]/div[2]/label/div/div/div/div/input").send_keys('\ue007')
         # wd.find_element_by_id("login-card").submit()
         # wd.send_
@@ -100,9 +110,9 @@ class TestAddAirport(unittest.TestCase):
         # element = wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/div/div[2]/div[4]/button/span[2]/span/i")
         # webdriver.ActionChains(wd).move_to_element(element).click(element).perform()
         # Выполнение logout (третий способ). В методе def setUp(self): "играем" со временем
-        WebDriverWait(wd, 7).until(EC.invisibility_of_element((By.XPATH,
+        WebDriverWait(wd, 12).until(EC.invisibility_of_element((By.XPATH,
                                                                "//div[@class='q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to']")))
-        WebDriverWait(wd, 7).until(
+        WebDriverWait(wd, 12).until(
             EC.element_to_be_clickable((By.XPATH, "//i[@class='mdi mdi-exit-to-app q-icon notranslate']"))).click()
 
     def adding_found_airport(self, wd):
