@@ -1,14 +1,12 @@
-from selenium import webdriver
+# -*- coding: utf-8 -*-
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-#from fixture.application import Application
 
 
 class AirportHelper:
     def __init__(self, app):
         self.app = app
-
 
     def waiting_before_closing_form(self):
         wd = self.app.wd
