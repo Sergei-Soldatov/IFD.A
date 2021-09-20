@@ -72,7 +72,6 @@ class AirportHelper:
 
 
 
-
     def adding_found_airport(self):
         wd = self.app.wd
         # Добавление найденного аэропорта (кнопка "Добавить")
@@ -119,3 +118,22 @@ class AirportHelper:
         wd = self.app.wd
         # Выбор модуля "Справочники/Аэропорты"
         wd.find_element_by_xpath("//div[@id='q-app']/div/div/aside/div/div[2]/div[3]/div[3]/span").click()
+
+    def message_no_airports(self):
+        wd = self.app.wd
+        # Отображение сообщения "Нет аэропортов" в форме "Добавить аэропорт"
+        # mess = wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*").click()
+        # if mess.is_displayed(mess):
+        #     return True
+        # else:
+        #     return False
+        if wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*").is_displayed():
+            return True
+        else:
+            return False
+
+    def wait_massege_no_airport(self):
+         wd = self.app.wd
+         WebDriverWait(wd, 10).until(EC.invisibility_of_element((By.XPATH, u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*")))
+         #WebDriverWait(wd, 2).until(EC.element_to_be_clickable((By.XPATH, "//i[@class='mdi mdi-exit-to-app q-icon notranslate']"))).click()
+         # u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*"

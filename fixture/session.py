@@ -32,8 +32,7 @@ class SessionHelper:
 
     def logout(self):
         wd = self.app.wd
-        WebDriverWait(wd, 9).until(EC.invisibility_of_element((By.XPATH, "//div[@class='q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to']")))
-        WebDriverWait(wd, 9).until(
+        WebDriverWait(wd, 2).until(EC.invisibility_of_element((By.XPATH, "//div[@class='q-dialog__backdrop fixed-full q-transition--fade-leave-active q-transition--fade-leave-to']")))
+        WebDriverWait(wd, 2).until(
             EC.element_to_be_clickable((By.XPATH, "//i[@class='mdi mdi-exit-to-app q-icon notranslate']"))).click()
-
 
