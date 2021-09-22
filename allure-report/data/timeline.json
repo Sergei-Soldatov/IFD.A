@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "shulga-pc",
+    "children" : [ {
+      "name" : "8100-MainThread",
+      "children" : [ {
+        "name" : "test_add_airport_by_IATA",
+        "uid" : "c177d1e82105ed6e",
+        "parentUid" : "f55c3319901019430ee450e0db5eed31",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632303919820,
+          "stop" : 1632303931338,
+          "duration" : 11518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_check_valid_authorization",
+        "uid" : "89014ca9d917ebed",
+        "parentUid" : "f55c3319901019430ee450e0db5eed31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632303907986,
+          "stop" : 1632303919813,
+          "duration" : 11827
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f55c3319901019430ee450e0db5eed31"
+    } ],
+    "uid" : "b8c3a36cab486555d1f27bb39a1ac421"
+  } ]
+}
