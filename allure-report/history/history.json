@@ -9,7 +9,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c177d1e82105ed6e",
+      "uid" : "bc5064b7ab533a34",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]",
       "time" : {
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89014ca9d917ebed",
+      "uid" : "b0ace3f533cb7c33",
       "status" : "passed",
       "time" : {
-        "start" : 1632303907986,
-        "stop" : 1632303919813,
-        "duration" : 11827
+        "start" : 1632313633598,
+        "stop" : 1632313645675,
+        "duration" : 12077
       }
     } ]
   }

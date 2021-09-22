@@ -6,21 +6,8 @@
     "children" : [ {
       "name" : "8100-MainThread",
       "children" : [ {
-        "name" : "test_add_airport_by_IATA",
-        "uid" : "c177d1e82105ed6e",
-        "parentUid" : "f55c3319901019430ee450e0db5eed31",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632303919820,
-          "stop" : 1632303931338,
-          "duration" : 11518
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "test_check_valid_authorization",
-        "uid" : "89014ca9d917ebed",
+        "uid" : "e9d9bd65ba27c1c",
         "parentUid" : "f55c3319901019430ee450e0db5eed31",
         "status" : "passed",
         "time" : {
@@ -31,8 +18,38 @@
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
+      }, {
+        "name" : "test_add_airport_by_IATA",
+        "uid" : "bc5064b7ab533a34",
+        "parentUid" : "f55c3319901019430ee450e0db5eed31",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632303919820,
+          "stop" : 1632303931338,
+          "duration" : 11518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
       } ],
       "uid" : "f55c3319901019430ee450e0db5eed31"
+    }, {
+      "name" : "7228-MainThread",
+      "children" : [ {
+        "name" : "test_check_valid_authorization",
+        "uid" : "b0ace3f533cb7c33",
+        "parentUid" : "99cba043d476a165444523dd4c3e7722",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632313633598,
+          "stop" : 1632313645675,
+          "duration" : 12077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99cba043d476a165444523dd4c3e7722"
     } ],
     "uid" : "b8c3a36cab486555d1f27bb39a1ac421"
   } ]
