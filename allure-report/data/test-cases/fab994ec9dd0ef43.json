@@ -1,12 +1,12 @@
 {
-  "uid" : "7f8ea2c1aa2400fc",
+  "uid" : "fab994ec9dd0ef43",
   "name" : "test_check_valid_authorization",
   "fullName" : "test.test_a_check_valid_authorization#test_check_valid_authorization",
   "historyId" : "a56605cc6e2d02e0f5172d22ed49ca33",
   "time" : {
-    "start" : 1632317754368,
-    "stop" : 1632317759153,
-    "duration" : 4785
+    "start" : 1632315333032,
+    "stop" : 1632315345267,
+    "duration" : 12235
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,34 +14,34 @@
   "beforeStages" : [ {
     "name" : "app",
     "time" : {
-      "start" : 1632317749117,
-      "stop" : 1632317754366,
-      "duration" : 5249
+      "start" : 1632315327237,
+      "stop" : 1632315333029,
+      "duration" : 5792
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "afterStages" : [ {
     "name" : "app::destroy",
     "time" : {
-      "start" : 1632317759154,
-      "stop" : 1632317760448,
-      "duration" : 1294
+      "start" : 1632315345268,
+      "stop" : 1632315346747,
+      "duration" : 1479
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "labels" : [ {
     "name" : "parentSuite",
@@ -54,7 +54,7 @@
     "value" : "shulga-pc"
   }, {
     "name" : "thread",
-    "value" : "1928-MainThread"
+    "value" : "2696-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -70,38 +70,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "7cfe76c73ceb581c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1632315333032,
-        "stop" : 1632315345267,
-        "duration" : 12235
-      }
-    }, {
-      "uid" : "33aafb1603e090ba",
-      "status" : "passed",
-      "time" : {
-        "start" : 1632313633598,
-        "stop" : 1632313645675,
-        "duration" : 12077
-      }
-    }, {
-      "uid" : "1144fa16b7febb30",
-      "status" : "passed",
-      "time" : {
-        "start" : 1632303907986,
-        "stop" : 1632303919813,
-        "duration" : 11827
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7f8ea2c1aa2400fc.json",
+  "source" : "fab994ec9dd0ef43.json",
   "parameterValues" : [ ]
 }

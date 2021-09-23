@@ -1,5 +1,5 @@
 [ {
-  "uid" : "b267f2caa616a4c8",
+  "uid" : "f73e0b65c09bafe7",
   "name" : "test_add_airport_by_IATA",
   "time" : {
     "start" : 1632303919820,
@@ -9,12 +9,12 @@
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "7f8ea2c1aa2400fc",
+  "uid" : "4c22fc6e8bdedfcc",
   "name" : "test_check_valid_authorization",
   "time" : {
-    "start" : 1632317754368,
-    "stop" : 1632317759153,
-    "duration" : 4785
+    "start" : 1632382644969,
+    "stop" : 1632382648727,
+    "duration" : 3758
   },
   "status" : "passed",
   "severity" : "normal"

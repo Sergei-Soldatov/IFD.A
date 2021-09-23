@@ -7,7 +7,7 @@
       "name" : "selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]",
       "children" : [ {
         "name" : "test_add_airport_by_IATA",
-        "uid" : "b267f2caa616a4c8",
+        "uid" : "f73e0b65c09bafe7",
         "parentUid" : "7f8d552a7f1eb3d80bc2f2dffb218c95",
         "status" : "broken",
         "time" : {

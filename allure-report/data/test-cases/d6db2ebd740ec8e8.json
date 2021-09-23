@@ -1,12 +1,12 @@
 {
-  "uid" : "7cfe76c73ceb581c",
+  "uid" : "d6db2ebd740ec8e8",
   "name" : "test_check_valid_authorization",
   "fullName" : "test.test_a_check_valid_authorization#test_check_valid_authorization",
   "historyId" : "a56605cc6e2d02e0f5172d22ed49ca33",
   "time" : {
-    "start" : 1632315333032,
-    "stop" : 1632315345267,
-    "duration" : 12235
+    "start" : 1632303907986,
+    "stop" : 1632303919813,
+    "duration" : 11827
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,34 +14,34 @@
   "beforeStages" : [ {
     "name" : "app",
     "time" : {
-      "start" : 1632315327237,
-      "stop" : 1632315333029,
-      "duration" : 5792
+      "start" : 1632303902185,
+      "stop" : 1632303907982,
+      "duration" : 5797
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "afterStages" : [ {
     "name" : "app::destroy",
     "time" : {
-      "start" : 1632315345268,
-      "stop" : 1632315346747,
-      "duration" : 1479
+      "start" : 1632303931520,
+      "stop" : 1632303933221,
+      "duration" : 1701
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "labels" : [ {
     "name" : "parentSuite",
@@ -54,7 +54,7 @@
     "value" : "shulga-pc"
   }, {
     "name" : "thread",
-    "value" : "2696-MainThread"
+    "value" : "8100-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -76,6 +76,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7cfe76c73ceb581c.json",
+  "source" : "d6db2ebd740ec8e8.json",
   "parameterValues" : [ ]
 }

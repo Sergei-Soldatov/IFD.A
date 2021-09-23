@@ -4,57 +4,10 @@
   "children" : [ {
     "name" : "shulga-pc",
     "children" : [ {
-      "name" : "8100-MainThread",
-      "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "1144fa16b7febb30",
-        "parentUid" : "f55c3319901019430ee450e0db5eed31",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632303907986,
-          "stop" : 1632303919813,
-          "duration" : 11827
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_airport_by_IATA",
-        "uid" : "b267f2caa616a4c8",
-        "parentUid" : "f55c3319901019430ee450e0db5eed31",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632303919820,
-          "stop" : 1632303931338,
-          "duration" : 11518
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f55c3319901019430ee450e0db5eed31"
-    }, {
-      "name" : "1928-MainThread",
-      "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "7f8ea2c1aa2400fc",
-        "parentUid" : "d18ac7af9f0fa89991c4acfe28a006c1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632317754368,
-          "stop" : 1632317759153,
-          "duration" : 4785
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "d18ac7af9f0fa89991c4acfe28a006c1"
-    }, {
       "name" : "2696-MainThread",
       "children" : [ {
         "name" : "test_check_valid_authorization",
-        "uid" : "7cfe76c73ceb581c",
+        "uid" : "fab994ec9dd0ef43",
         "parentUid" : "bbf074987ea95373eab7988ed89e48b1",
         "status" : "passed",
         "time" : {
@@ -68,10 +21,44 @@
       } ],
       "uid" : "bbf074987ea95373eab7988ed89e48b1"
     }, {
+      "name" : "9408-MainThread",
+      "children" : [ {
+        "name" : "test_check_valid_authorization",
+        "uid" : "4c22fc6e8bdedfcc",
+        "parentUid" : "9c4e70161b5149ee0e5ba257d79ecc67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632382644969,
+          "stop" : 1632382648727,
+          "duration" : 3758
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9c4e70161b5149ee0e5ba257d79ecc67"
+    }, {
+      "name" : "1928-MainThread",
+      "children" : [ {
+        "name" : "test_check_valid_authorization",
+        "uid" : "123270e267c4673",
+        "parentUid" : "d18ac7af9f0fa89991c4acfe28a006c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632317754368,
+          "stop" : 1632317759153,
+          "duration" : 4785
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d18ac7af9f0fa89991c4acfe28a006c1"
+    }, {
       "name" : "7228-MainThread",
       "children" : [ {
         "name" : "test_check_valid_authorization",
-        "uid" : "33aafb1603e090ba",
+        "uid" : "55338a75a7dceefa",
         "parentUid" : "99cba043d476a165444523dd4c3e7722",
         "status" : "passed",
         "time" : {
@@ -84,6 +71,36 @@
         "parameters" : [ ]
       } ],
       "uid" : "99cba043d476a165444523dd4c3e7722"
+    }, {
+      "name" : "8100-MainThread",
+      "children" : [ {
+        "name" : "test_check_valid_authorization",
+        "uid" : "d6db2ebd740ec8e8",
+        "parentUid" : "f55c3319901019430ee450e0db5eed31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632303907986,
+          "stop" : 1632303919813,
+          "duration" : 11827
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_airport_by_IATA",
+        "uid" : "f73e0b65c09bafe7",
+        "parentUid" : "f55c3319901019430ee450e0db5eed31",
+        "status" : "broken",
+        "time" : {
+          "start" : 1632303919820,
+          "stop" : 1632303931338,
+          "duration" : 11518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f55c3319901019430ee450e0db5eed31"
     } ],
     "uid" : "b8c3a36cab486555d1f27bb39a1ac421"
   } ]
