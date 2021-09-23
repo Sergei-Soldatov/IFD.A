@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "test_add_airport_by_IATA",
-    "uid" : "bc5064b7ab533a34",
+    "uid" : "b267f2caa616a4c8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
@@ -16,13 +16,13 @@
     "parameters" : [ ]
   }, {
     "name" : "test_check_valid_authorization",
-    "uid" : "b0ace3f533cb7c33",
+    "uid" : "7f8ea2c1aa2400fc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1632313633598,
-      "stop" : 1632313645675,
-      "duration" : 12077
+      "start" : 1632317754368,
+      "stop" : 1632317759153,
+      "duration" : 4785
     },
     "flaky" : false,
     "newFailed" : false,

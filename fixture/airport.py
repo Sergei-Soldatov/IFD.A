@@ -11,9 +11,9 @@ class AirportHelper:
     def waiting_before_closing_form(self):
         wd = self.app.wd
         # Ожидание перед закрытием формы "Добавить аэропорт"
-        WebDriverWait(wd, 7).until(
+        WebDriverWait(wd, 3).until(
             EC.invisibility_of_element((By.XPATH, "//div[@class='q-dialog__backdrop fixed-full']")))
-        WebDriverWait(wd, 7).until(EC.element_to_be_clickable((By.XPATH, "//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']"))).click()
+        WebDriverWait(wd, 3).until(EC.element_to_be_clickable((By.XPATH, "//span[@class='q-btn__content text-center col items-center q-anchor--skip justify-center row']"))).click()
 
     # def waiting_before_closing_form(self):
     #     # Ожидание перед закрытием формы "Добавить аэропорт"
@@ -134,6 +134,6 @@ class AirportHelper:
 
     def wait_massege_no_airport(self):
          wd = self.app.wd
-         WebDriverWait(wd, 10).until(EC.invisibility_of_element((By.XPATH, u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*")))
+         WebDriverWait(wd, 3).until(EC.invisibility_of_element((By.XPATH, u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*")))
          #WebDriverWait(wd, 2).until(EC.element_to_be_clickable((By.XPATH, "//i[@class='mdi mdi-exit-to-app q-icon notranslate']"))).click()
          # u"//*/text()[normalize-space(.)='Нет аэропортов']/parent::*"
