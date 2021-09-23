@@ -1,0 +1,81 @@
+{
+  "uid" : "1144fa16b7febb30",
+  "name" : "test_check_valid_authorization",
+  "fullName" : "test.test_a_check_valid_authorization#test_check_valid_authorization",
+  "historyId" : "a56605cc6e2d02e0f5172d22ed49ca33",
+  "time" : {
+    "start" : 1632303907986,
+    "stop" : 1632303919813,
+    "duration" : 11827
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1632303902185,
+      "stop" : 1632303907982,
+      "duration" : 5797
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "app::destroy",
+    "time" : {
+      "start" : 1632303931520,
+      "stop" : 1632303933221,
+      "duration" : 1701
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_a_check_valid_authorization"
+  }, {
+    "name" : "host",
+    "value" : "shulga-pc"
+  }, {
+    "name" : "thread",
+    "value" : "8100-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_a_check_valid_authorization"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1144fa16b7febb30.json",
+  "parameterValues" : [ ]
+}
