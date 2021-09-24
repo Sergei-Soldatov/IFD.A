@@ -15,7 +15,8 @@ class Application:
     def open_sandwich_menu(self):
         wd = self.wd
         # Открытие сэндвич-меню выбора модулей
-        wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/button/span[2]/span/i").click()
+        # wd.find_element_by_xpath("//div[@id='q-app']/div/header/div/button/span[2]/span/i").click()
+        wd.find_element_by_xpath("//*/text()[normalize-space(.)='menu']/parent::*").click()
 
     def open_home_page(self):
         wd = self.wd

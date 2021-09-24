@@ -1,26 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]",
-      "children" : [ {
-        "name" : "test_add_airport_by_IATA",
-        "uid" : "f73e0b65c09bafe7",
-        "parentUid" : "7f8d552a7f1eb3d80bc2f2dffb218c95",
-        "status" : "broken",
-        "time" : {
-          "start" : 1632303919820,
-          "stop" : 1632303931338,
-          "duration" : 11518
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "7f8d552a7f1eb3d80bc2f2dffb218c95"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }

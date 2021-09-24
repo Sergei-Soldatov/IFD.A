@@ -1,21 +1,61 @@
 [ {
-  "uid" : "4c22fc6e8bdedfcc",
-  "name" : "test_check_valid_authorization",
+  "uid" : "3131c0947417b798",
+  "name" : "test_add_airport_form_rus",
   "time" : {
-    "start" : 1632382644969,
-    "stop" : 1632382648727,
-    "duration" : 3758
+    "start" : 1632492077426,
+    "stop" : 1632492084737,
+    "duration" : 7311
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f73e0b65c09bafe7",
+  "uid" : "bd9c98352a0ead74",
+  "name" : "test_exit_extended_form_add_airport",
+  "time" : {
+    "start" : 1632492069271,
+    "stop" : 1632492077421,
+    "duration" : 8150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb82d6afeaee1c60",
   "name" : "test_add_airport_by_IATA",
   "time" : {
-    "start" : 1632303919820,
-    "stop" : 1632303931338,
-    "duration" : 11518
+    "start" : 1632492044020,
+    "stop" : 1632492051958,
+    "duration" : 7938
   },
-  "status" : "broken",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4743b24cb791c7ff",
+  "name" : "test_check_invalid_characters_in_IATA_code",
+  "time" : {
+    "start" : 1632492059871,
+    "stop" : 1632492069256,
+    "duration" : 9385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bdcfab4b6d585233",
+  "name" : "test_check_valid_authorization",
+  "time" : {
+    "start" : 1632492040310,
+    "stop" : 1632492044013,
+    "duration" : 3703
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f1efcf727a1dbb3",
+  "name" : "test_check_invalid_value_IATA_to_select_airport",
+  "time" : {
+    "start" : 1632492051976,
+    "stop" : 1632492059859,
+    "duration" : 7883
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

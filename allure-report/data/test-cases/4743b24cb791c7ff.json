@@ -1,12 +1,12 @@
 {
-  "uid" : "123270e267c4673",
-  "name" : "test_check_valid_authorization",
-  "fullName" : "test.test_a_check_valid_authorization#test_check_valid_authorization",
-  "historyId" : "a56605cc6e2d02e0f5172d22ed49ca33",
+  "uid" : "4743b24cb791c7ff",
+  "name" : "test_check_invalid_characters_in_IATA_code",
+  "fullName" : "test.test_check_invalid_value_IATA_code#test_check_invalid_characters_in_IATA_code",
+  "historyId" : "673b22f99b9a026bad66ba5ba940f9cb",
   "time" : {
-    "start" : 1632317754368,
-    "stop" : 1632317759153,
-    "duration" : 4785
+    "start" : 1632492059871,
+    "stop" : 1632492069256,
+    "duration" : 9385
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "app",
     "time" : {
-      "start" : 1632317749117,
-      "stop" : 1632317754366,
-      "duration" : 5249
+      "start" : 1632492033504,
+      "stop" : 1632492040307,
+      "duration" : 6803
     },
     "status" : "passed",
     "steps" : [ ],
@@ -30,9 +30,9 @@
   "afterStages" : [ {
     "name" : "app::destroy",
     "time" : {
-      "start" : 1632317759154,
-      "stop" : 1632317760448,
-      "duration" : 1294
+      "start" : 1632492084738,
+      "stop" : 1632492086259,
+      "duration" : 1521
     },
     "status" : "passed",
     "steps" : [ ],
@@ -48,13 +48,13 @@
     "value" : "test"
   }, {
     "name" : "suite",
-    "value" : "test_a_check_valid_authorization"
+    "value" : "test_check_invalid_value_IATA_code"
   }, {
     "name" : "host",
     "value" : "shulga-pc"
   }, {
     "name" : "thread",
-    "value" : "1928-MainThread"
+    "value" : "2996-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -63,19 +63,21 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test.test_a_check_valid_authorization"
+    "value" : "test.test_check_invalid_value_IATA_code"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
-  "retry" : true,
+  "hidden" : false,
+  "retry" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "123270e267c4673.json",
+  "source" : "4743b24cb791c7ff.json",
   "parameterValues" : [ ]
 }

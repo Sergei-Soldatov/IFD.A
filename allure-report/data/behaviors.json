@@ -2,27 +2,79 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "test_add_airport_by_IATA",
-    "uid" : "f73e0b65c09bafe7",
+    "name" : "test_check_valid_authorization",
+    "uid" : "bdcfab4b6d585233",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
+    "status" : "passed",
     "time" : {
-      "start" : 1632303919820,
-      "stop" : 1632303931338,
-      "duration" : 11518
+      "start" : 1632492040310,
+      "stop" : 1632492044013,
+      "duration" : 3703
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "test_check_valid_authorization",
-    "uid" : "4c22fc6e8bdedfcc",
+    "name" : "test_add_airport_by_IATA",
+    "uid" : "fb82d6afeaee1c60",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1632382644969,
-      "stop" : 1632382648727,
-      "duration" : 3758
+      "start" : 1632492044020,
+      "stop" : 1632492051958,
+      "duration" : 7938
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_check_invalid_value_IATA_to_select_airport",
+    "uid" : "6f1efcf727a1dbb3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1632492051976,
+      "stop" : 1632492059859,
+      "duration" : 7883
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_check_invalid_characters_in_IATA_code",
+    "uid" : "4743b24cb791c7ff",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1632492059871,
+      "stop" : 1632492069256,
+      "duration" : 9385
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_exit_extended_form_add_airport",
+    "uid" : "bd9c98352a0ead74",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1632492069271,
+      "stop" : 1632492077421,
+      "duration" : 8150
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_add_airport_form_rus",
+    "uid" : "3131c0947417b798",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1632492077426,
+      "stop" : 1632492084737,
+      "duration" : 7311
     },
     "flaky" : false,
     "newFailed" : false,

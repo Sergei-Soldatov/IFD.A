@@ -4,103 +4,87 @@
   "children" : [ {
     "name" : "shulga-pc",
     "children" : [ {
-      "name" : "2696-MainThread",
+      "name" : "2996-MainThread",
       "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "fab994ec9dd0ef43",
-        "parentUid" : "bbf074987ea95373eab7988ed89e48b1",
+        "name" : "test_exit_extended_form_add_airport",
+        "uid" : "bd9c98352a0ead74",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
         "status" : "passed",
         "time" : {
-          "start" : 1632315333032,
-          "stop" : 1632315345267,
-          "duration" : 12235
+          "start" : 1632492069271,
+          "stop" : 1632492077421,
+          "duration" : 8150
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "bbf074987ea95373eab7988ed89e48b1"
-    }, {
-      "name" : "9408-MainThread",
-      "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "4c22fc6e8bdedfcc",
-        "parentUid" : "9c4e70161b5149ee0e5ba257d79ecc67",
+      }, {
+        "name" : "test_add_airport_form_rus",
+        "uid" : "3131c0947417b798",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
         "status" : "passed",
         "time" : {
-          "start" : 1632382644969,
-          "stop" : 1632382648727,
-          "duration" : 3758
+          "start" : 1632492077426,
+          "stop" : 1632492084737,
+          "duration" : 7311
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "9c4e70161b5149ee0e5ba257d79ecc67"
-    }, {
-      "name" : "1928-MainThread",
-      "children" : [ {
+      }, {
         "name" : "test_check_valid_authorization",
-        "uid" : "123270e267c4673",
-        "parentUid" : "d18ac7af9f0fa89991c4acfe28a006c1",
+        "uid" : "bdcfab4b6d585233",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
         "status" : "passed",
         "time" : {
-          "start" : 1632317754368,
-          "stop" : 1632317759153,
-          "duration" : 4785
+          "start" : 1632492040310,
+          "stop" : 1632492044013,
+          "duration" : 3703
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "d18ac7af9f0fa89991c4acfe28a006c1"
-    }, {
-      "name" : "7228-MainThread",
-      "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "55338a75a7dceefa",
-        "parentUid" : "99cba043d476a165444523dd4c3e7722",
+      }, {
+        "name" : "test_check_invalid_value_IATA_to_select_airport",
+        "uid" : "6f1efcf727a1dbb3",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
         "status" : "passed",
         "time" : {
-          "start" : 1632313633598,
-          "stop" : 1632313645675,
-          "duration" : 12077
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "99cba043d476a165444523dd4c3e7722"
-    }, {
-      "name" : "8100-MainThread",
-      "children" : [ {
-        "name" : "test_check_valid_authorization",
-        "uid" : "d6db2ebd740ec8e8",
-        "parentUid" : "f55c3319901019430ee450e0db5eed31",
-        "status" : "passed",
-        "time" : {
-          "start" : 1632303907986,
-          "stop" : 1632303919813,
-          "duration" : 11827
+          "start" : 1632492051976,
+          "stop" : 1632492059859,
+          "duration" : 7883
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_add_airport_by_IATA",
-        "uid" : "f73e0b65c09bafe7",
-        "parentUid" : "f55c3319901019430ee450e0db5eed31",
-        "status" : "broken",
+        "uid" : "fb82d6afeaee1c60",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
+        "status" : "passed",
         "time" : {
-          "start" : 1632303919820,
-          "stop" : 1632303931338,
-          "duration" : 11518
+          "start" : 1632492044020,
+          "stop" : 1632492051958,
+          "duration" : 7938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_check_invalid_characters_in_IATA_code",
+        "uid" : "4743b24cb791c7ff",
+        "parentUid" : "7eb60be7a847c2e0bd02812d8ec1deea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632492059871,
+          "stop" : 1632492069256,
+          "duration" : 9385
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f55c3319901019430ee450e0db5eed31"
+      "uid" : "7eb60be7a847c2e0bd02812d8ec1deea"
     } ],
     "uid" : "b8c3a36cab486555d1f27bb39a1ac421"
   } ]

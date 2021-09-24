@@ -1,0 +1,83 @@
+{
+  "uid" : "bd9c98352a0ead74",
+  "name" : "test_exit_extended_form_add_airport",
+  "fullName" : "test.test_exit_extended_form_add_airport#test_exit_extended_form_add_airport",
+  "historyId" : "4d2bb08632c3e523767a63779dca6105",
+  "time" : {
+    "start" : 1632492069271,
+    "stop" : 1632492077421,
+    "duration" : 8150
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1632492033504,
+      "stop" : 1632492040307,
+      "duration" : 6803
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "app::destroy",
+    "time" : {
+      "start" : 1632492084738,
+      "stop" : 1632492086259,
+      "duration" : 1521
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_exit_extended_form_add_airport"
+  }, {
+    "name" : "host",
+    "value" : "shulga-pc"
+  }, {
+    "name" : "thread",
+    "value" : "2996-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_exit_extended_form_add_airport"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd9c98352a0ead74.json",
+  "parameterValues" : [ ]
+}

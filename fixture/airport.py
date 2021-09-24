@@ -98,7 +98,10 @@ class AirportHelper:
     def enter_IATA_code(self, iata_cod):
         wd = self.app.wd
         # Ввод кода ИАТА в поле "Код ИАТА" в форме "Добавить аэропорт"
+        # wd.find_element_by_xpath("//div[4]/label/div/div/div/input").click()
+        # wd.find_element_by_xpath("//div[4]/label/div/div/div/input").send_keys(iata_cod)
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").click()
+        wd.find_element_by_xpath("//div[4]/label/div/div/div/input").clear()
         wd.find_element_by_xpath("//div[4]/label/div/div/div/input").send_keys(iata_cod)
 
     def open_form_add_airport(self):
@@ -107,17 +110,19 @@ class AirportHelper:
         self.airport_module_selection()
         self.open_tab_airport()
         # Открытие формы "Добавить Аэропорт" (кнопка "+Добавить")
-        wd.find_element_by_xpath("//div[@id='q-app']/div/div[2]/div/div[2]/div[2]/div/button/span[2]/span").click()
+        WebDriverWait(wd, 3).until(EC.invisibility_of_element((By.XPATH, u"//*/text()[normalize-space(.)='+&amp;nbsp;Добавить']/parent::*")))
+        WebDriverWait(wd, 3).until(EC.element_to_be_clickable((By.XPATH, u"(.//*[normalize-space(text()) and normalize-space(.)='Типы ВС'])[1]/following::span[3]"))).click()
 
     def open_tab_airport(self):
         wd = self.app.wd
         # Открытие вкладки "Аэропорты"
-        wd.find_element_by_xpath("//div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]").click()
+        # wd.find_element_by_xpath("//div[@id='q-app']/div/div[2]/div/div/div/div/div/div/div[2]").click()
+        wd.find_element_by_xpath(u"//*/text()[normalize-space(.)='Аэропорты']/parent::*").click()
 
     def airport_module_selection(self):
         wd = self.app.wd
         # Выбор модуля "Справочники/Аэропорты"
-        wd.find_element_by_xpath("//div[@id='q-app']/div/div/aside/div/div[2]/div[3]/div[3]/span").click()
+        wd.find_element_by_xpath(u"(.//*[normalize-space(text()) and normalize-space(.)='Аэропорты'])[1]/preceding::span[2]").click()
 
     def message_no_airports(self):
         wd = self.app.wd
